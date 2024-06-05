@@ -7,7 +7,7 @@ const playBtn = document.querySelector(".play");
 let i = 60; // seconds
 let time;
 let degree;
-let isPaused = false;
+let isPaused = true;
 
 playBtn.addEventListener("click", play);
 refereshBtn.addEventListener("click", referesh);
@@ -36,10 +36,10 @@ function play() {
   playBtn.classList.toggle("active");
   if (playBtn.classList[1] == "active") {
     playBtn.querySelector("span").className = "fas fa-pause";
-    isPaused = true;
+    isPaused = false;
   } else {
     playBtn.querySelector("span").className = "fas fa-play";
-    isPaused = false;
+    isPaused = true;
   }
 }
 
