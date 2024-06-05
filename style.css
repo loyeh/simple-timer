@@ -45,7 +45,7 @@
   height: 100%;
   border-radius: 100%;
   background-color: white;
-  background-image: conic-gradient(#334 90deg, white 90deg);
+  /* background-image: conic-gradient(#334 90deg, white 90deg); */
   overflow: hidden;
 }
 
@@ -56,7 +56,7 @@
   background-color: white;
   position: absolute;
   top: 0;
-  transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(0deg);
   transform-origin: 0.5em 5.5em;
 }
 
@@ -86,4 +86,12 @@
   line-height: 2em;
   color: black;
   cursor: pointer;
+}
+
+.referesh:active {
+  background-color: #afa;
+}
+
+.active {
+  background-color: #afa;
 }
